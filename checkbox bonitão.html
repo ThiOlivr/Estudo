@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title> Página de exemplo estrutura básica </title>
+		<meta charset="utf-8">
+		<meta name="author" content="Thiago">
+		<meta name="description" content="lista de documentos">
+		<meta name="keywords" content="html, tecnologia">
+
+		<style type="text/css">
+			body{
+				font-family: sans-serif;
+			}
+
+			label{
+				margin-right: 25px;
+			}
+
+			label span{
+				display: inline-block;
+				width: 60px;
+				height: 30px;
+				background-color: #ccc;
+				border-radius: 15px;
+			}
+
+			label span::before{
+				content: "";
+				display: block;
+				background: #FFF;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin: 5px;
+				transition: all .2s ease-in-out;
+			}
+
+			label input:checked + span:before{
+				transform: translateX(30px);
+				background: rgba(100,255,100,100);
+			}
+
+			label input:focus + span{
+				box-shadow: 0 0 0 1px rgba(100,255,100,100);
+			}
+
+			input{
+				opacity: 0;
+				width: 1px;
+				height: 1px;
+				overflow: hidden;
+			}
+
+		</style>
+</head>
+<body>
+	<h1>Checkbox Bonitão</h1>
+
+	<label>
+		<input type="checkbox">
+		<span></span>
+		Esporte
+	</label>
+
+	<label>
+		<input type="checkbox">
+		<span></span>
+		Política
+	</label>
+
+	<label>
+		<input type="checkbox">
+		<span></span>
+		Educação
+	</label>
+</body>
+</html>

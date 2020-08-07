@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title> Página de exemplo estrutura básica </title>
+		<meta charset="utf-8">
+		<meta name="author" content="Thiago">
+		<meta name="description" content="lista de documentos">
+		<meta name="keywords" content="html, tecnologia">
+
+		<style type="text/css">
+			
+			a{
+				display: block;
+				margin: 10px;
+				position: relative;
+			}
+
+			a img{
+				width: 100%;
+				display: block;
+			}
+
+			a::before{
+				content: "";
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: transparent;
+				transition: all .5s;
+			}
+
+			a:hover::before{
+				background: rgba(0, 0, 0, .5);
+			}
+
+			a::after{
+				opacity: 0
+			}
+
+			a:hover::after{
+				content: "Veja +";
+				display: block;
+				position: absolute;
+				border: 3px solid white;
+				color: white;
+				top: 50%;
+				left: 50%;
+				padding: 10px 20px;
+				transform: translate(-55%, -50%);
+				opacity: 1;
+			}
+		</style>
+</head>
+<body>
+	<h1>Thumbs bonitonas</h1>
+
+	<article>
+		<a href="#">
+			<img src="Projeto Strata\images\thumbs\01.jpg" alt="">
+		</a>
+	</article>
+
+	<article>
+		<a href="#">
+			<img src="Projeto Strata\images\thumbs\02.jpg" alt=""
+		</a>
+	</article>
+
+	<article>
+		<a href="#">
+			<img src="Projeto Strata\images\thumbs\03.jpg" alt=""
+		</a>
+	</article>
+
+	<article>
+		<a href="#">
+			<img src="Projeto Strata\images\thumbs\04.jpg" alt=""
+		</a>
+	</article>
+
+	<article>
+		<a href="#">
+			<img src="Projeto Strata\images\thumbs\05.jpg" alt=""
+		</a>
+	</article>
+
+	<article>
+		<a href="#">
+			<img src="Projeto Strata\images\thumbs\06.jpg" alt=""
+		</a>
+	</article>
+</body>
+</html>
